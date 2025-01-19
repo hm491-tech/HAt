@@ -1,0 +1,57 @@
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.lecture-content-container {
+  height: 500px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-content {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #3856D0, #E286C3);
+  border-radius: 30px;
+
+  color: whitesmoke;
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 24px;
+  padding: 0 10px;
+  border: 2px solid black;
+}
+
+.notes-content img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.notes-content .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.lecture-content-container button {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.lecture-content-container button:hover {
+  background-color: rgb(200, 200, 200);
+}
+

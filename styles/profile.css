@@ -1,0 +1,149 @@
+:root {
+  --lecture-button-color: rgb(52, 52, 52);
+  --lecture-text-color: white;
+}
+
+body {
+  display: flex;
+  height: 100vh; 
+}
+
+.overall-container {
+  width: 80%; 
+  max-width: 1000px; 
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.profile-stats-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.profile-name {
+  font-size: 25px;
+}
+
+.course-name {
+  font-size: 20px;
+}
+
+.occupation {
+  font-size: 20px;
+}
+
+.mini-stats {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.followers {
+  margin-right: 10px;
+}
+
+.xpPoints {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.follow-button {
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+
+  background: radial-gradient(circle at bottom right, #3856D0, #ff758c);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
+.follow-button.following {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 50px;
+  position: relative;
+  border-bottom: 2px solid #ccc;
+}
+
+.heading-container button {
+  width: 100px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+
+.heading-container button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s, height 0.2s;
+}
+
+.heading-container button.selected::after {
+  width: 100%;
+  height: 4px; /* Extra thickness when selected */
+}
+
+.heading-container button img {
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+.lecture-button {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  font-size: 25px;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lecture-button img {
+  height: 50%;
+  margin-right: 20px;
+}
+
+.lecture-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); 
+}
